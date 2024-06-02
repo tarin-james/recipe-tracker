@@ -40,7 +40,7 @@ nav a{
   margin: 10px;
   text-decoration: none;
   padding: 5px;
-  display: none;
+  /* display: none; */
 }
 
 #links {
