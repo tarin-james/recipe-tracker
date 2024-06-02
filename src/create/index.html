@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Create</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header id="main-header"></header>
+    <main>
+      <h1>Create New Recipe</h1>
+      <form action="thanks.html">
+        <fieldset>
+          <label
+            >Recipe Name*
+            <input type="text" id="recipeName" name="recipeName" required
+          /></label>
+          <label
+            >Brief Description
+            <input type="text" id="Description" name="Description"
+          /></label>
+          <label
+            >Ingredients <input type="text" id="Ingredients" name="Ingredients"
+          /></label>
+          <button onclick="">+</button>
+          <label
+            >Instructions<textarea
+              name="Instructions"
+              id="Instructions"
+            ></textarea>
+          </label>
+          <input type="submit" id="submit" value="Add Recipe" />
+        </fieldset>
+      </form>
+    </main>
+    <footer id="main-footer"></footer>
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
