@@ -10,6 +10,7 @@ export default defineConfig({
         main: resolve(__dirname, "src/index.html"),
         create: resolve(__dirname, "src/create/index.html"),
         search: resolve(__dirname, "src/search/index.html"),
+        details: resolve(__dirname, "src/details/index.html")
       },
     },
   },
