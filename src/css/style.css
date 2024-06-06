@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Golos+Text&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Golos+Text&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  --background-color: #ECF8F8;
+  --background-color: #ecf8f8;
   --black: #080708;
   --blue: #c4ecf5;
   --pink: #f7c9d4;
@@ -14,12 +14,24 @@
 
 body {
   background-color: var(--background-color);
-
+  margin: 0;
 }
 
 main {
   font-family: var(--body-font);
-  min-height: calc(108vh - 285px);
+  min-height: calc(113vh - 285px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  padding: 10px;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 30px 20px;
+  background-color: var(--pink);
 }
 
 header {
@@ -30,41 +42,67 @@ header {
   padding: 10px;
 }
 
+
+
 nav {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  background-color: var(--yellow);
+  display: none;
 }
 
-nav a{
-  background-color: var(--blue);
-  margin: 10px;
+nav a {
+  color: black;
   text-decoration: none;
-  padding: 5px;
-  /* display: none; */
+  font-size: x-large;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a:hover {
+  background-color: var(--blue);
+  color: black;
+  text-decoration: none;
+  width: 100%;
+}
+
+.show {
+  display: flex;
 }
 
 #links {
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+
+#title {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+#title a {
+  text-decoration: none;
+  color: black;
 }
 
 .hamburger {
-  display: inline-block;
+
   position: relative;
-  display: flex;
-  margin: 15px;
-  justify-self: end;
-  grid-column: 2/3;
-  grid-row: 1;
 }
 
 .hamburger a.main-nav-toggle {
   display: block;
   width: 28px;
   height: 16px;
-  right: 0;
+  right:  0;
+  top:25px;
   position: absolute;
-  top: 0;
+
   padding: 4px;
 }
 
@@ -127,4 +165,144 @@ nav a{
   opacity: 0;
 }
 
+#search {
+  text-align: center;
+}
 
+#search-bar {
+  text-align: center;
+  width: 100%;
+  padding: 5px 0px;
+  box-sizing: border-box;
+  font-size: large;
+}
+
+fieldset {
+  margin-top: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  padding: 5px;
+}
+
+input {
+  margin: 5px;
+  
+}
+
+#submit {
+  margin: 0 auto;
+}
+
+#add-ingredient {
+  margin: 0 auto;
+}
+
+#recipe-title {
+  text-align: center;
+}
+
+#results {
+  text-align: center;
+  font-size: large;
+}
+
+#titles {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 5px;
+  background-color: var(--blue);
+}
+
+#recipe-info {
+  text-align: center;
+}
+
+#recipe-info ul{
+  text-align: left;
+}
+
+.recipeEntry {
+  text-align: center;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  background-color: var(--yellow);
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.recipeEntry:hover {
+  background-color: var(--blue);
+}
+
+#loaded-recipes {
+  width: 100%;
+}
+
+@media screen and (min-width: 675px){
+  nav {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  #links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+  }
+
+  
+  nav a {
+    height: 100%;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  nav a:hover {
+    border-radius: 10px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  fieldset {
+    margin: 30px 50px ;
+  }
+
+  #header-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #title h1 {
+    margin: 0;
+    align-self: center;
+  }
+
+
+
+}
+
+@media screen and (min-width: 900px) {
+  fieldset {
+    margin:  0 400px
+  }
+
+  #titles {
+    padding: 0px 50px;
+  }
+
+
+}

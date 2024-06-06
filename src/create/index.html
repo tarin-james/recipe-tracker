@@ -9,24 +9,26 @@
   <body>
     <header id="main-header"></header>
     <main>
-      <h1>Create New Recipe</h1>
-      <form action="thanks.html">
+      <h1 id="recipe-title">Create New Recipe</h1>
+      <form action="../index.html" id="create-form">
         <fieldset>
           <label
             >Recipe Name*
             <input type="text" id="recipeName" name="recipeName" required
           /></label>
           <label
-            >Brief Description
-            <input type="text" id="Description" name="Description"
+            >Description
+            <input type="text" id="Description" name="description"
           /></label>
           <label
-            >Ingredients <input type="text" id="Ingredients" name="Ingredients"
-          /></label>
-          <button onclick="">+</button>
+            >Ingredients <input type="text" id="Ingredients" name="ingredients"
+          /><button type="button" id="add-ingredient" >+</button></label>
+          <div id="ingredients-added">
+
+          </div>
           <label
-            >Instructions<textarea
-              name="Instructions"
+            >Instructions <textarea
+              name="instructions"
               id="Instructions"
             ></textarea>
           </label>
@@ -36,5 +38,6 @@
     </main>
     <footer id="main-footer"></footer>
     <script src="../js/main.js" type="module"></script>
+    <script type="module" src="../js/create.mjs"></script>
   </body>
 </html>

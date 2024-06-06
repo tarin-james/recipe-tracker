@@ -10,10 +10,15 @@
     <header id="main-header">
     </header>
       <main>
-        <h1>Search For Existing Recipe</h1>
-        <input type="text" placeholder="ex. Recipe Name, Ingredients, Date added">
+        <h1 id="search">Search For Existing Recipe</h1>
+        <input id="search-bar" type="text" placeholder="ex. Recipe Name">
+        <p id="results">Results:</p>
+        <div id="loaded-recipes">
+
+        </div>
       </main>
       <footer id="main-footer"></footer>
       <script src="../js/main.js" type="module"></script>
+      <script type="module" src="../js/search.mjs"></script>
 </body>
 </html>
